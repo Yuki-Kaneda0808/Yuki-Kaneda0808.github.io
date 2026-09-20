@@ -557,57 +557,37 @@
 
       <div>
 
-        <!-- same illustration language -->
+        <!-- Scientifically grounded schematic of a mouse 2PN zygote -->
 
         <div class="current-embryo">
 
-          <svg viewBox="0 0 420 300" aria-hidden="true">
+          <svg viewBox="0 0 420 320" role="img" aria-labelledby="zygote-title zygote-desc">
+            <title id="zygote-title">Mouse two-pronuclear zygote</title>
+            <desc id="zygote-desc">Schematic showing the zona pellucida, oolemma, maternal and paternal pronuclei with nucleoli, and the second polar body.</desc>
 
-            <circle
-              class="current-oocyte"
-              cx="210"
-              cy="145"
-              r="105"
-            />
+            <!-- zona pellucida and oolemma -->
+            <circle class="current-zona" cx="210" cy="150" r="112"/>
+            <circle class="current-oolemma" cx="210" cy="150" r="92"/>
 
-            <circle
-              class="current-inner"
-              cx="210"
-              cy="145"
-              r="88"
-            />
+            <!-- maternal and paternal pronuclei -->
+            <circle class="current-pronucleus" cx="174" cy="153" r="34"/>
+            <circle class="current-pronucleus" cx="246" cy="153" r="34"/>
 
-            <circle
-              class="current-pronucleus"
-              cx="178"
-              cy="137"
-              r="31"
-            />
+            <!-- nucleolar precursor bodies -->
+            <g class="current-nucleoli">
+              <circle cx="163" cy="145" r="4"/>
+              <circle cx="178" cy="161" r="4"/>
+              <circle cx="187" cy="145" r="3"/>
+              <circle cx="234" cy="145" r="4"/>
+              <circle cx="249" cy="161" r="4"/>
+              <circle cx="260" cy="145" r="3"/>
+            </g>
 
-            <circle
-              class="current-pronucleus"
-              cx="242"
-              cy="153"
-              r="31"
-            />
+            <!-- second polar body in the perivitelline space -->
+            <circle class="current-polar-body" cx="277" cy="68" r="12"/>
+            <circle class="current-polar-core" cx="277" cy="68" r="4"/>
 
-            <path
-              class="current-sperm"
-              d="
-                M20 90
-                C76 78 100 120 133 126
-                C146 128 153 130 160 133
-              "
-            />
-
-            <ellipse
-              class="current-sperm"
-              cx="21"
-              cy="90"
-              rx="15"
-              ry="10"
-            />
-
+            <text class="current-caption" x="210" y="294" text-anchor="middle">2PN ZYGOTE · SCHEMATIC</text>
           </svg>
 
         </div>

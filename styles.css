@@ -2745,18 +2745,16 @@ footer p {
   margin: 20px auto 30px;
 }
 
-.current-oocyte {
-  fill: rgba(199, 127, 104, 0.025);
-
+.current-zona {
+  fill: rgba(199, 127, 104, 0.018);
   stroke: var(--embryo);
-  stroke-width: 1.5;
+  stroke-width: 2;
 }
 
-.current-inner {
-  fill: none;
-
-  stroke: rgba(255,255,255,0.13);
-  stroke-width: 1;
+.current-oolemma {
+  fill: rgba(255, 255, 255, 0.012);
+  stroke: rgba(255, 255, 255, 0.24);
+  stroke-width: 1.2;
 }
 
 .current-pronucleus {
@@ -2766,11 +2764,30 @@ footer p {
   stroke-width: 1.5;
 }
 
-.current-sperm {
-  fill: none;
+.current-nucleoli {
+  fill: rgba(244, 241, 235, 0.16);
+  stroke: rgba(244, 241, 235, 0.4);
+  stroke-width: 0.8;
+}
 
-  stroke: #77a5aa;
-  stroke-width: 1.5;
+.current-polar-body {
+  fill: rgba(199, 127, 104, 0.07);
+  stroke: var(--embryo);
+  stroke-width: 1.3;
+}
+
+.current-polar-core {
+  fill: rgba(244, 241, 235, 0.16);
+  stroke: rgba(244, 241, 235, 0.36);
+  stroke-width: 0.8;
+}
+
+.current-caption {
+  fill: var(--dark-muted);
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 2px;
 }
 
 .current-grid .current-copy {
