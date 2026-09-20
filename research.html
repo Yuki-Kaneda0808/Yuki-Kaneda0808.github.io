@@ -1,98 +1,655 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research vision of Yuki Kaneda.">
-  <title>Research vision | Yuki Kaneda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Yuki Kaneda</title>
+  <meta name="description"
+        content="Research of Yuki Kaneda — from germline genetics and mouse genome editing to fertilization, early embryonic development and epigenome engineering.">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<aside class="sidebar">
-  <a class="name" href="index.html">Yuki Kaneda</a>
-  <nav class="nav">
-    <a class="" href="index.html">Home</a>
-    <a class="active" href="research.html">Research vision</a>
-    <a class="" href="works.html">Works</a>
-  </nav>
-  <div class="sidebar-bottom">
-    Yuki Kaneda<br>
-    Postdoctoral Researcher<br>
-    Berlin, Germany
-  </div>
-</aside>
-<header class="mobile-header">
-  <a href="index.html">Yuki Kaneda</a>
-  <nav class="mini-nav">
+<header class="site-header">
+  <a class="logo" href="index.html">YK<span>.</span></a>
+
+  <nav>
     <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
+    <a href="research.html" class="active">Research</a>
     <a href="works.html">Works</a>
   </nav>
 </header>
 
-<main class="main">
-  <div class="page">
-    <section class="section compact">
-      <p class="kicker">Research vision</p>
-      <h1>From molecular states to biological inheritance</h1>
-      <p class="question">
-        My central interest is how biological information is encoded in the mammalian germline,
-        remodeled after fertilization, and translated into developmental phenotypes.
+<main>
+
+  <!-- ===================== HERO ===================== -->
+
+  <section class="research-hero">
+
+    <div class="research-hero-copy">
+      <p class="eyebrow">01 / RESEARCH</p>
+
+      <h1>
+        From genetic
+        <span>perturbation</span>
+        to developmental
+        <em>reprogramming.</em>
+      </h1>
+
+      <p class="research-hero-lead">
+        I study biological information by perturbing it.
+        My research is moving from gene function in the mammalian
+        germline toward the molecular reprogramming that initiates
+        embryonic development.
       </p>
-    </section>
-
-    <section class="vision-block">
-      <div>
-        <div class="vision-number">01 · DISCOVER</div>
-      </div>
-      <div class="vision-text">
-        <h2>Find the molecular determinants of reproductive function.</h2>
-        <p>
-          Mouse genetics provides a direct route from gene perturbation to sperm structure,
-          fertilization, fertility, and developmental outcome. I use this framework to identify
-          molecular components that are necessary for germ-cell differentiation and function.
-        </p>
-      </div>
-    </section>
-
-    <section class="vision-block">
-      <div>
-        <div class="vision-number">02 · RESOLVE</div>
-      </div>
-      <div class="vision-text">
-        <h2>Track epigenetic information through early development.</h2>
-        <p>
-          Fertilization triggers extensive chromatin and DNA methylation remodeling. I am interested
-          in allele-resolved and genome-scale approaches that reveal when parental molecular states
-          are erased, retained, or converted into new developmental states.
-        </p>
-      </div>
-    </section>
-
-    <section class="vision-block">
-      <div>
-        <div class="vision-number">03 · ENGINEER</div>
-      </div>
-      <div class="vision-text">
-        <h2>Move from correlation to causality.</h2>
-        <p>
-          The long-term goal is to engineer defined molecular states in vivo and test their
-          consequences across germ cells, embryos, tissues, and generations. This requires linking
-          precise perturbation with rigorous molecular readouts and developmental phenotyping.
-        </p>
-      </div>
-    </section>
-
-    <div class="note">
-      Current projects and unpublished experimental details are intentionally not listed here.
     </div>
 
-    <footer class="footer">
-      <span>© 2026 Yuki Kaneda</span>
-      <span><a href="works.html">Selected works →</a></span>
-    </footer>
-  </div>
+
+    <!-- Scientific trajectory illustration -->
+
+    <div class="research-illustration" aria-hidden="true">
+
+      <svg viewBox="0 0 1200 460"
+           class="trajectory-art"
+           role="img">
+
+        <defs>
+          <linearGradient id="researchGradient"
+                          x1="0%" y1="0%"
+                          x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#28717a"/>
+            <stop offset="48%" stop-color="#806b91"/>
+            <stop offset="100%" stop-color="#c77f68"/>
+          </linearGradient>
+        </defs>
+
+        <!-- long trajectory -->
+        <path class="art-path"
+              d="M80 245
+                 C190 245 240 185 340 215
+                 C430 242 485 248 555 220
+                 C640 185 700 175 770 205
+                 C855 242 915 245 1110 190"/>
+
+        <!-- DNA -->
+        <g class="art-dna">
+          <path d="M130 160 C190 190 190 270 130 300"/>
+          <path d="M190 160 C130 190 130 270 190 300"/>
+          <line x1="145" y1="176" x2="175" y2="176"/>
+          <line x1="137" y1="200" x2="183" y2="200"/>
+          <line x1="137" y1="230" x2="183" y2="230"/>
+          <line x1="137" y1="260" x2="183" y2="260"/>
+          <line x1="145" y1="284" x2="175" y2="284"/>
+        </g>
+
+        <!-- edit cut -->
+        <g class="art-cut">
+          <line x1="205" y1="204" x2="226" y2="230"/>
+          <line x1="226" y1="204" x2="205" y2="230"/>
+          <circle cx="202" cy="200" r="6"/>
+          <circle cx="230" cy="200" r="6"/>
+        </g>
+
+        <!-- sperm -->
+        <g class="art-sperm">
+          <ellipse cx="390" cy="225" rx="25" ry="17"/>
+          <path d="M365 225
+                   C320 210 305 260 270 245
+                   C250 236 252 213 270 208"/>
+        </g>
+
+        <!-- oocyte -->
+        <g class="art-oocyte">
+          <circle cx="610" cy="215" r="72"/>
+          <circle cx="592" cy="205" r="17"/>
+          <circle cx="628" cy="227" r="17"/>
+        </g>
+
+        <!-- 2 cell -->
+        <g class="art-embryo">
+          <circle cx="790" cy="215" r="45"/>
+          <circle cx="860" cy="215" r="45"/>
+        </g>
+
+        <!-- 4/8 cell -->
+        <g class="art-embryo-late">
+          <circle cx="1010" cy="175" r="35"/>
+          <circle cx="1062" cy="175" r="35"/>
+          <circle cx="984" cy="225" r="35"/>
+          <circle cx="1036" cy="225" r="35"/>
+          <circle cx="1088" cy="225" r="35"/>
+          <circle cx="1010" cy="275" r="35"/>
+          <circle cx="1062" cy="275" r="35"/>
+        </g>
+
+      </svg>
+
+
+      <div class="art-labels">
+        <div>
+          <span>01</span>
+          GENOME EDITING
+        </div>
+
+        <div>
+          <span>02</span>
+          GERMLINE
+        </div>
+
+        <div>
+          <span>03</span>
+          FERTILIZATION
+        </div>
+
+        <div>
+          <span>04</span>
+          EARLY EMBRYO
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== CENTRAL IDEA ===================== -->
+
+  <section class="research-question">
+
+    <p class="section-number">CENTRAL IDEA</p>
+
+    <div class="question-grid">
+
+      <h2>
+        Perturb the
+        information.
+        <br>
+        Reveal the
+        mechanism.
+      </h2>
+
+      <div>
+        <p class="question-lead">
+          Different biological systems,
+          one experimental logic.
+        </p>
+
+        <p>
+          Genetic perturbation makes it possible to move from
+          association to causality. In the germline, I have used
+          genetically modified mice to ask how individual genes
+          control spermiogenesis, sperm architecture and fertility.
+        </p>
+
+        <p>
+          I am interested in extending this causal framework across
+          fertilization — from perturbing DNA sequence to perturbing
+          the epigenetic states that shape early development.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== 01 GERMLINE ===================== -->
+
+  <section class="research-chapter chapter-germline">
+
+    <div class="chapter-meta">
+      <span>01</span>
+      <span>DISCOVER</span>
+      <span>GERMLINE</span>
+    </div>
+
+    <div class="chapter-layout">
+
+      <div class="chapter-copy">
+
+        <h2>
+          Germline
+          <span>biology.</span>
+        </h2>
+
+        <p class="chapter-lead">
+          How does a round spermatid become a functional sperm cell?
+        </p>
+
+        <p>
+          My previous work focused on molecular mechanisms of
+          spermiogenesis and male fertility. By disrupting
+          testis-enriched genes in mice, I investigated how
+          specialized proteins shape sperm morphology and function.
+        </p>
+
+        <div class="chapter-keywords">
+          <span>Spermiogenesis</span>
+          <span>Sperm morphology</span>
+          <span>Male fertility</span>
+          <span>Functional genetics</span>
+        </div>
+
+      </div>
+
+
+      <!-- sperm illustration -->
+
+      <div class="chapter-visual sperm-visual" aria-hidden="true">
+
+        <svg viewBox="0 0 520 400">
+
+          <g class="big-sperm">
+            <ellipse cx="325" cy="190"
+                     rx="55" ry="39"/>
+
+            <ellipse cx="339" cy="190"
+                     rx="27" ry="25"/>
+
+            <path d="M271 191
+                     C215 165 183 213 140 219
+                     C90 226 82 176 111 156
+                     C140 136 158 166 140 181
+                     C124 194 102 181 109 166"/>
+          </g>
+
+          <circle class="visual-orbit"
+                  cx="325"
+                  cy="190"
+                  r="94"/>
+
+          <text x="325"
+                y="330"
+                text-anchor="middle"
+                class="svg-caption">
+            SPERM MORPHOGENESIS
+          </text>
+
+        </svg>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== 02 GENOME EDITING ===================== -->
+
+  <section class="research-chapter chapter-editing">
+
+    <div class="chapter-meta">
+      <span>02</span>
+      <span>PERTURB</span>
+      <span>MOUSE GENETICS</span>
+    </div>
+
+    <div class="chapter-layout reverse">
+
+      <div class="chapter-copy">
+
+        <h2>
+          Mouse genome
+          <span>editing.</span>
+        </h2>
+
+        <p class="chapter-lead">
+          Build the perturbation.
+          Read the phenotype.
+        </p>
+
+        <p>
+          Genetically modified mice provide a direct route from
+          candidate gene to organismal phenotype. This approach
+          has been central to my work on reproductive biology:
+          disrupt a gene, characterize the resulting cellular
+          phenotype, and identify the underlying mechanism.
+        </p>
+
+        <div class="logic-flow">
+          <div>
+            <strong>PERTURB</strong>
+            <small>gene</small>
+          </div>
+
+          <span>→</span>
+
+          <div>
+            <strong>OBSERVE</strong>
+            <small>phenotype</small>
+          </div>
+
+          <span>→</span>
+
+          <div>
+            <strong>RESOLVE</strong>
+            <small>mechanism</small>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- genome editing illustration -->
+
+      <div class="chapter-visual genome-visual" aria-hidden="true">
+
+        <svg viewBox="0 0 520 400">
+
+          <path class="genome-strand strand-a"
+                d="M120 70
+                   C380 130 140 270 400 330"/>
+
+          <path class="genome-strand strand-b"
+                d="M400 70
+                   C140 130 380 270 120 330"/>
+
+          <g class="genome-rungs">
+            <line x1="155" y1="91" x2="365" y2="91"/>
+            <line x1="191" y1="120" x2="329" y2="120"/>
+            <line x1="218" y1="150" x2="302" y2="150"/>
+            <line x1="232" y1="180" x2="288" y2="180"/>
+
+            <line class="cut-rung"
+                  x1="232" y1="215"
+                  x2="288" y2="215"/>
+
+            <line x1="218" y1="250" x2="302" y2="250"/>
+            <line x1="191" y1="280" x2="329" y2="280"/>
+            <line x1="155" y1="309" x2="365" y2="309"/>
+          </g>
+
+          <g class="scissors">
+            <circle cx="235" cy="198" r="12"/>
+            <circle cx="285" cy="198" r="12"/>
+            <line x1="244" y1="207" x2="276" y2="239"/>
+            <line x1="276" y1="207" x2="244" y2="239"/>
+          </g>
+
+        </svg>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== TRANSITION ===================== -->
+
+  <section class="fertilization-break">
+
+    <div class="fertilization-heading">
+
+      <p>
+        03 / TRANSITION
+      </p>
+
+      <h2>
+        Two genomes.
+        <br>
+        <em>One developmental program.</em>
+      </h2>
+
+    </div>
+
+
+    <div class="fertilization-scene">
+
+      <svg viewBox="0 0 800 600"
+           aria-hidden="true">
+
+        <circle class="zygote-outer"
+                cx="400"
+                cy="300"
+                r="210"/>
+
+        <circle class="zygote-inner"
+                cx="400"
+                cy="300"
+                r="178"/>
+
+        <circle class="pronucleus paternal"
+                cx="335"
+                cy="290"
+                r="62"/>
+
+        <circle class="pronucleus maternal"
+                cx="465"
+                cy="310"
+                r="62"/>
+
+        <circle class="pronucleus-core"
+                cx="335"
+                cy="290"
+                r="10"/>
+
+        <circle class="pronucleus-core"
+                cx="465"
+                cy="310"
+                r="10"/>
+
+        <path class="incoming-sperm"
+              d="M85 185
+                 C145 175 167 220 220 234
+                 C256 244 275 248 292 260"/>
+
+        <ellipse class="incoming-head"
+                 cx="84"
+                 cy="184"
+                 rx="26"
+                 ry="18"/>
+
+      </svg>
+
+    </div>
+
+
+    <div class="fertilization-text">
+
+      <p class="large">
+        Fertilization is not simply the meeting of two genomes.
+        It initiates a radical transition in biological state.
+      </p>
+
+      <p>
+        Highly specialized gametes must give rise to an embryo
+        capable of generating an entire organism. Parental genomes
+        are reorganized, chromatin is remodeled, and developmental
+        regulation is established anew.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== 04 EMBRYO ===================== -->
+
+  <section class="research-chapter chapter-embryo">
+
+    <div class="chapter-meta">
+      <span>04</span>
+      <span>REPROGRAM</span>
+      <span>EARLY DEVELOPMENT</span>
+    </div>
+
+    <div class="chapter-layout">
+
+      <div class="chapter-copy">
+
+        <h2>
+          Early embryo
+          <span>epigenetics.</span>
+        </h2>
+
+        <p class="chapter-lead">
+          How is inherited molecular information rewritten
+          after fertilization?
+        </p>
+
+        <p>
+          I am interested in the regulatory transitions that
+          accompany the beginning of mammalian development,
+          particularly the reorganization of chromatin and
+          epigenetic information after fertilization.
+        </p>
+
+        <div class="chapter-keywords embryo-keywords">
+          <span>Fertilization</span>
+          <span>Chromatin</span>
+          <span>DNA methylation</span>
+          <span>Reprogramming</span>
+        </div>
+
+      </div>
+
+
+      <!-- cleavage illustration -->
+
+      <div class="chapter-visual embryo-visual" aria-hidden="true">
+
+        <div class="embryo-stage">
+          <div class="embryo-circle one">
+            <i></i>
+          </div>
+          <small>ZYGOTE</small>
+        </div>
+
+        <span class="embryo-arrow">→</span>
+
+        <div class="embryo-stage">
+          <div class="embryo-circle two">
+            <i></i><i></i>
+          </div>
+          <small>2-CELL</small>
+        </div>
+
+        <span class="embryo-arrow">→</span>
+
+        <div class="embryo-stage">
+          <div class="embryo-circle four">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <small>CLEAVAGE</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================== 05 FUTURE ===================== -->
+
+  <section class="engineering-section">
+
+    <div class="engineering-label">
+      <span>05</span>
+      ENGINEER
+    </div>
+
+    <div class="engineering-grid">
+
+      <div>
+
+        <h2>
+          From genome
+          <br>
+          <span>editing</span>
+          <br>
+          to epigenome
+          <br>
+          <em>engineering.</em>
+        </h2>
+
+      </div>
+
+      <div class="engineering-copy">
+
+        <p class="engineering-lead">
+          Observation identifies a developmental state.
+          Perturbation can reveal what makes that state matter.
+        </p>
+
+        <p>
+          My long-term direction is to develop causal approaches
+          for testing how specific epigenetic states influence
+          early mammalian development.
+        </p>
+
+        <div class="engineering-comparison">
+
+          <div>
+            <span>PAST</span>
+            <strong>DNA sequence</strong>
+            <small>Genome editing</small>
+          </div>
+
+          <div class="comparison-arrow">→</div>
+
+          <div>
+            <span>FORWARD</span>
+            <strong>Epigenetic state</strong>
+            <small>Epigenome engineering</small>
+          </div>
+
+        </div>
+
+        <a href="works.html" class="large-link light-link">
+          Selected publications
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
 </main>
+
+
+<footer>
+
+  <div>
+    <strong>Yuki Kaneda</strong>
+    <p>Reproductive & Developmental Biology</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="works.html">Works</a>
+  </div>
+
+  <div class="footer-note">
+    <span>Berlin, Germany</span>
+    <span>© 2026</span>
+  </div>
+
+</footer>
+
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, {
+  threshold: 0.12
+});
+
+document
+  .querySelectorAll(
+    ".research-chapter, .question-grid, .engineering-grid"
+  )
+  .forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
