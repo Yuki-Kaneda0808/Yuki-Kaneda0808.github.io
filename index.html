@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Yuki Kaneda — studying mammalian reproduction, germline biology, genome editing and early embryonic development."
+    content="Yuki Kaneda — postdoctoral researcher studying mammalian reproduction, genome editing, fertilization and early embryonic development."
   >
 
   <link rel="stylesheet" href="styles.css">
@@ -17,33 +17,37 @@
 <body>
 
 <header class="site-header">
-  <a class="logo" href="index.html">
+  <a class="logo" href="index.html" aria-label="Yuki Kaneda home">
     YK<span>.</span>
   </a>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html" class="active">Home</a>
     <a href="research.html">Research</a>
     <a href="works.html">Works</a>
+    <a href="#cv">CV</a>
   </nav>
 </header>
 
 
 <main>
 
-  <!-- HERO -->
+  <!-- ======================================================
+       HERO
+  ======================================================= -->
+
   <section class="hero">
 
     <div class="hero-copy">
 
-      <p class="eyebrow">YUKI KANEDA · REPRODUCTIVE & DEVELOPMENTAL BIOLOGY</p>
+      <p class="eyebrow">
+        YUKI KANEDA · REPRODUCTIVE & DEVELOPMENTAL BIOLOGY
+      </p>
 
       <h1>
-        From
-        <span class="germline-text">germline</span>
+        From germline
         <br>
-        to
-        <span class="embryo-text">embryo.</span>
+        <span>to embryo.</span>
       </h1>
 
       <p class="hero-lead">
@@ -59,37 +63,28 @@
       </p>
 
       <div class="hero-links">
-        <a class="primary-button" href="research.html">
-          Explore research
-          <span>↗</span>
-        </a>
-
-        <a class="text-link" href="works.html">
-          Publications →
-        </a>
+        <a href="research.html">Explore research ↗</a>
+        <a href="works.html">Publications →</a>
+        <a href="#cv">Curriculum vitae ↓</a>
       </div>
 
     </div>
 
 
-    <!-- DEVELOPMENTAL VISUAL -->
-    <div class="development-visual" aria-hidden="true">
+    <!-- Unified scientific illustration -->
 
-      <div class="visual-label label-left">
-        GERMLINE
-      </div>
+    <div class="home-science-visual" aria-hidden="true">
 
-      <div class="visual-label label-right">
-        EMBRYO
-      </div>
-
-
-      <svg viewBox="0 0 700 430" class="development-svg">
+      <svg viewBox="0 0 760 500">
 
         <defs>
-          <linearGradient id="trajectoryGradient"
-                          x1="0%" y1="0%"
-                          x2="100%" y2="0%">
+          <linearGradient
+            id="homeGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
             <stop offset="0%" stop-color="#28717a"/>
             <stop offset="52%" stop-color="#806b91"/>
             <stop offset="100%" stop-color="#c77f68"/>
@@ -98,90 +93,163 @@
 
 
         <!-- trajectory -->
+
         <path
-          class="trajectory"
-          d="M80 230
-             C180 225 220 175 310 190
-             C400 205 420 235 500 220
-             C555 210 585 190 625 175"
+          class="science-path"
+          d="
+            M70 285
+            C150 260 190 225 260 245
+            C330 266 365 275 420 245
+            C485 210 530 220 585 245
+            C625 263 655 250 700 215
+          "
         />
 
 
         <!-- sperm -->
-        <g class="sperm">
-          <ellipse cx="90" cy="230" rx="17" ry="12"/>
+
+        <g class="science-germline">
+          <ellipse
+            cx="155"
+            cy="248"
+            rx="24"
+            ry="16"
+          />
+
           <path
-            d="M74 230
-               C45 220 35 245 18 235
-               C5 228 10 210 25 211"
+            d="
+              M132 250
+              C105 247 96 269 72 270
+              C49 271 44 251 58 241
+              C69 233 79 239 76 248
+            "
           />
         </g>
 
 
-        <!-- genome editing -->
-        <g class="dna-symbol">
-          <path d="M205 185 C240 205 240 245 205 265"/>
-          <path d="M245 185 C210 205 210 245 245 265"/>
+        <!-- DNA -->
 
-          <line x1="215" y1="198" x2="235" y2="198"/>
-          <line x1="211" y1="215" x2="239" y2="215"/>
-          <line x1="211" y1="235" x2="239" y2="235"/>
-          <line x1="215" y1="252" x2="235" y2="252"/>
+        <g class="science-dna">
+
+          <path
+            d="
+              M260 190
+              C315 218 315 288 260 315
+            "
+          />
+
+          <path
+            d="
+              M310 190
+              C255 218 255 288 310 315
+            "
+          />
+
+          <line x1="272" y1="205" x2="298" y2="205"/>
+          <line x1="263" y1="230" x2="307" y2="230"/>
+          <line x1="263" y1="255" x2="307" y2="255"/>
+          <line x1="263" y1="280" x2="307" y2="280"/>
+          <line x1="272" y1="303" x2="298" y2="303"/>
+
+          <!-- edit mark -->
+
+          <line
+            class="science-edit"
+            x1="315"
+            y1="238"
+            x2="337"
+            y2="261"
+          />
+
+          <line
+            class="science-edit"
+            x1="337"
+            y1="238"
+            x2="315"
+            y2="261"
+          />
+
         </g>
 
 
-        <!-- oocyte / fertilization -->
-        <g class="fertilization">
-          <circle cx="360" cy="205" r="52"/>
-          <circle cx="345" cy="197" r="11"/>
-          <circle cx="375" cy="214" r="11"/>
+        <!-- fertilized oocyte -->
+
+        <g class="science-fertilization">
+
+          <circle
+            cx="455"
+            cy="250"
+            r="70"
+          />
+
+          <circle
+            cx="435"
+            cy="242"
+            r="18"
+          />
+
+          <circle
+            cx="475"
+            cy="260"
+            r="18"
+          />
+
         </g>
 
 
-        <!-- two cell -->
-        <g class="two-cell">
-          <circle cx="500" cy="205" r="30"/>
-          <circle cx="548" cy="205" r="30"/>
+        <!-- 2-cell -->
+
+        <g class="science-embryo">
+
+          <circle
+            cx="600"
+            cy="245"
+            r="41"
+          />
+
+          <circle
+            cx="655"
+            cy="245"
+            r="41"
+          />
+
         </g>
 
 
-        <!-- embryo -->
-        <g class="embryo-cluster">
-          <circle cx="606" cy="158" r="24"/>
-          <circle cx="643" cy="158" r="24"/>
+        <!-- small later embryo -->
 
-          <circle cx="588" cy="195" r="24"/>
-          <circle cx="625" cy="195" r="24"/>
-          <circle cx="662" cy="195" r="24"/>
+        <g class="science-embryo science-late">
 
-          <circle cx="606" cy="232" r="24"/>
-          <circle cx="643" cy="232" r="24"/>
+          <circle cx="625" cy="355" r="26"/>
+          <circle cx="663" cy="355" r="26"/>
+
+          <circle cx="606" cy="391" r="26"/>
+          <circle cx="644" cy="391" r="26"/>
+          <circle cx="682" cy="391" r="26"/>
+
+          <circle cx="625" cy="427" r="26"/>
+          <circle cx="663" cy="427" r="26"/>
+
         </g>
+
+
+        <!-- labels -->
+
+        <text x="120" y="335">GERMLINE</text>
+        <text x="245" y="350">EDIT</text>
+        <text x="410" y="350">FERTILIZATION</text>
+        <text x="585" y="320">EMBRYO</text>
 
       </svg>
 
 
-      <div class="stage-labels">
+      <div class="visual-scale">
 
-        <div>
-          <span>01</span>
-          Germline
-        </div>
+        <span>GENETICS</span>
 
-        <div>
-          <span>02</span>
-          Genome editing
-        </div>
+        <div class="visual-scale-line"></div>
 
-        <div>
-          <span>03</span>
-          Fertilization
-        </div>
-
-        <div>
-          <span>04</span>
-          Embryo
-        </div>
+        <span>DEVELOPMENT</span>
 
       </div>
 
@@ -190,41 +258,67 @@
   </section>
 
 
+  <!-- ======================================================
+       TRAJECTORY
+  ======================================================= -->
 
-  <!-- TRAJECTORY -->
   <section class="trajectory-section">
-
-    <div class="section-number">01 / TRAJECTORY</div>
 
     <div class="trajectory-heading">
 
-      <h2>
-        One question,
-        <br>
-        across generations.
-      </h2>
-
-      <p>
-        My research follows biological information across the
-        reproductive cycle — from genes controlling germ-cell
-        differentiation to the molecular reprogramming that begins
-        immediately after fertilization.
+      <p class="section-number">
+        01 / TRAJECTORY
       </p>
+
+      <div>
+
+        <h2>
+          One question,
+          <br>
+          across generations.
+        </h2>
+
+        <p class="section-intro">
+          My research follows biological information across the
+          reproductive cycle — from genes controlling germ-cell
+          differentiation to the molecular reprogramming that
+          begins immediately after fertilization.
+        </p>
+
+      </div>
 
     </div>
 
 
-    <div class="research-flow">
+    <div class="research-grid">
 
 
-      <article class="research-stage germline-stage">
+      <!-- 01 -->
+
+      <article class="research-stage">
 
         <div class="stage-top">
           <span>PAST</span>
           <span>01</span>
         </div>
 
-        <div class="cell-icon single-cell"></div>
+
+        <div class="mini-illustration sperm-mini">
+
+          <svg viewBox="0 0 120 80" aria-hidden="true">
+            <ellipse cx="75" cy="38" rx="17" ry="11"/>
+
+            <path
+              d="
+                M58 39
+                C43 35 37 53 22 50
+                C10 47 11 34 20 30
+              "
+            />
+          </svg>
+
+        </div>
+
 
         <h3>Germline biology</h3>
 
@@ -233,56 +327,81 @@
           spermiogenesis, sperm function, and male fertility.
         </p>
 
-        <div class="keywords">
+        <div class="stage-tags">
           Spermiogenesis · Male fertility · Gene function
         </div>
 
       </article>
 
 
+      <!-- 02 -->
 
-      <article class="research-stage editing-stage">
+      <article class="research-stage">
 
         <div class="stage-top">
           <span>TOOLKIT</span>
           <span>02</span>
         </div>
 
-        <div class="edit-icon">
-          <span>ATCG</span>
-          <span class="edit-cut">╱</span>
-          <span>CGTA</span>
+
+        <div class="mini-illustration dna-mini">
+
+          <svg viewBox="0 0 120 80" aria-hidden="true">
+
+            <path d="M42 13 C82 30 82 52 42 68"/>
+            <path d="M78 13 C38 30 38 52 78 68"/>
+
+            <line x1="48" y1="21" x2="72" y2="21"/>
+            <line x1="43" y1="34" x2="77" y2="34"/>
+            <line x1="43" y1="47" x2="77" y2="47"/>
+            <line x1="48" y1="60" x2="72" y2="60"/>
+
+            <line class="mini-cut" x1="81" y1="33" x2="95" y2="48"/>
+            <line class="mini-cut" x1="95" y1="33" x2="81" y2="48"/>
+
+          </svg>
+
         </div>
+
 
         <h3>Mouse genome editing</h3>
 
         <p>
           Building genetically modified mouse models to perturb
-          candidate genes and establish causal relationships between
-          genotype and reproductive phenotype.
+          candidate genes and establish causal relationships
+          between genotype and reproductive phenotype.
         </p>
 
-        <div class="keywords">
+        <div class="stage-tags">
           CRISPR · Mouse genetics · Functional analysis
         </div>
 
       </article>
 
 
+      <!-- 03 -->
 
-      <article class="research-stage embryo-stage">
+      <article class="research-stage">
 
         <div class="stage-top">
           <span>NOW</span>
           <span>03</span>
         </div>
 
-        <div class="mini-embryo">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
+
+        <div class="mini-illustration embryo-mini">
+
+          <svg viewBox="0 0 120 80" aria-hidden="true">
+
+            <circle cx="60" cy="40" r="29"/>
+
+            <circle cx="51" cy="37" r="8"/>
+            <circle cx="69" cy="44" r="8"/>
+
+          </svg>
+
         </div>
+
 
         <h3>Early embryo</h3>
 
@@ -292,35 +411,48 @@
           program emerges.
         </p>
 
-        <div class="keywords">
+        <div class="stage-tags">
           Fertilization · Chromatin · Epigenetic reprogramming
         </div>
 
       </article>
 
 
+      <!-- 04 -->
 
-      <article class="research-stage future-stage">
+      <article class="research-stage">
 
         <div class="stage-top">
           <span>FORWARD</span>
           <span>04</span>
         </div>
 
-        <div class="future-icon">
-          <div></div>
-          <span>+</span>
+
+        <div class="mini-illustration engineering-mini">
+
+          <svg viewBox="0 0 120 80" aria-hidden="true">
+
+            <circle cx="60" cy="40" r="27"/>
+
+            <path d="M60 24 V56"/>
+            <path d="M44 40 H76"/>
+
+            <circle cx="60" cy="40" r="7"/>
+
+          </svg>
+
         </div>
+
 
         <h3>Epigenome engineering</h3>
 
         <p>
           Moving from observing developmental transitions toward
-          perturbing epigenetic states and testing their causal roles
-          in mammalian development.
+          perturbing epigenetic states and testing their causal
+          roles in mammalian development.
         </p>
 
-        <div class="keywords">
+        <div class="stage-tags">
           Causality · Engineering · Development
         </div>
 
@@ -331,25 +463,31 @@
   </section>
 
 
+  <!-- ======================================================
+       APPROACH
+  ======================================================= -->
 
-  <!-- PHILOSOPHY -->
-  <section class="philosophy">
+  <section class="approach-section">
 
-    <p class="section-number">02 / APPROACH</p>
+    <p class="section-number">
+      02 / APPROACH
+    </p>
 
-    <div class="philosophy-grid">
+
+    <div class="approach-grid">
 
       <h2>
         Perturb.
         <br>
         Observe.
         <br>
-        Understand.
+        <span>Understand.</span>
       </h2>
 
-      <div class="philosophy-copy">
 
-        <p class="large-copy">
+      <div class="approach-copy">
+
+        <p class="approach-lead">
           The biological system changes.
           <br>
           The experimental logic remains.
@@ -366,6 +504,30 @@
           into the earliest stages of mammalian development.
         </p>
 
+
+        <div class="causal-diagram">
+
+          <div>
+            <span>01</span>
+            <strong>PERTURB</strong>
+          </div>
+
+          <i>→</i>
+
+          <div>
+            <span>02</span>
+            <strong>OBSERVE</strong>
+          </div>
+
+          <i>→</i>
+
+          <div>
+            <span>03</span>
+            <strong>UNDERSTAND</strong>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
@@ -373,37 +535,358 @@
   </section>
 
 
+  <!-- ======================================================
+       CURRENT DIRECTION
+  ======================================================= -->
 
-  <!-- CURRENT -->
   <section class="current-section">
 
-    <div class="current-marker">
-      <div class="pulse-cell"></div>
-      <span>CURRENT DIRECTION</span>
-    </div>
-
-    <h2>
-      What happens to biological information
-      <em>after fertilization?</em>
-    </h2>
-
-    <p>
-      The transition from two highly specialized gametes to a
-      totipotent embryo requires profound reorganization of chromatin,
-      DNA methylation, and transcriptional regulation. Understanding
-      this transition is the next chapter of my research.
+    <p class="current-label">
+      CURRENT DIRECTION
     </p>
 
-    <a href="research.html" class="large-link">
-      Research vision
-      <span>↗</span>
-    </a>
+
+    <div class="current-grid">
+
+      <h2>
+        What happens to
+        biological information
+        <em>after fertilization?</em>
+      </h2>
+
+
+      <div>
+
+        <!-- same illustration language -->
+
+        <div class="current-embryo">
+
+          <svg viewBox="0 0 420 300" aria-hidden="true">
+
+            <circle
+              class="current-oocyte"
+              cx="210"
+              cy="145"
+              r="105"
+            />
+
+            <circle
+              class="current-inner"
+              cx="210"
+              cy="145"
+              r="88"
+            />
+
+            <circle
+              class="current-pronucleus"
+              cx="178"
+              cy="137"
+              r="31"
+            />
+
+            <circle
+              class="current-pronucleus"
+              cx="242"
+              cy="153"
+              r="31"
+            />
+
+            <path
+              class="current-sperm"
+              d="
+                M20 90
+                C76 78 100 120 133 126
+                C146 128 153 130 160 133
+              "
+            />
+
+            <ellipse
+              class="current-sperm"
+              cx="21"
+              cy="90"
+              rx="15"
+              ry="10"
+            />
+
+          </svg>
+
+        </div>
+
+
+        <p class="current-copy">
+          The transition from two highly specialized gametes to
+          a totipotent embryo requires profound reorganization of
+          chromatin, DNA methylation, and transcriptional regulation.
+          Understanding this transition is the next chapter of my research.
+        </p>
+
+        <a href="research.html" class="large-link light-link">
+          Research vision
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
 
   </section>
 
 
-</main>
+  <!-- ======================================================
+       CV
+  ======================================================= -->
 
+  <section class="cv-section" id="cv">
+
+    <div class="cv-heading">
+
+      <p class="section-number">
+        03 / CURRICULUM VITAE
+      </p>
+
+      <h2>
+        Research
+        <span>trajectory.</span>
+      </h2>
+
+    </div>
+
+
+    <div class="cv-layout">
+
+      <!-- profile -->
+
+      <aside class="cv-profile">
+
+        <div class="cv-monogram">
+          YK
+        </div>
+
+        <h3>Yuki Kaneda, PhD</h3>
+
+        <p>
+          Postdoctoral Researcher
+        </p>
+
+        <p>
+          Max Planck Institute for Molecular Genetics
+          <br>
+          Berlin, Germany
+        </p>
+
+
+        <div class="cv-profile-links">
+
+          <a
+            href="https://orcid.org/0000-0001-6300-4234"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ORCID ↗
+          </a>
+
+          <a href="works.html">
+            Publications ↗
+          </a>
+
+        </div>
+
+      </aside>
+
+
+      <!-- timeline -->
+
+      <div class="cv-timeline">
+
+
+        <article class="cv-entry">
+
+          <div class="cv-date">
+            PRESENT
+          </div>
+
+          <div class="cv-marker"></div>
+
+          <div class="cv-entry-content">
+
+            <p class="cv-type">
+              POSTDOCTORAL RESEARCH
+            </p>
+
+            <h3>
+              Max Planck Institute for Molecular Genetics
+            </h3>
+
+            <p class="cv-place">
+              Berlin, Germany
+            </p>
+
+            <p>
+              Research on genome regulation across major developmental
+              transitions, with an emphasis on early development and
+              epigenetic regulation.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="cv-entry">
+
+          <div class="cv-date">
+            DOCTORAL
+          </div>
+
+          <div class="cv-marker"></div>
+
+          <div class="cv-entry-content">
+
+            <p class="cv-type">
+              GRADUATE RESEARCH
+            </p>
+
+            <h3>
+              Graduate School of Pharmaceutical Sciences
+            </h3>
+
+            <p class="cv-place">
+              The University of Osaka · Osaka, Japan
+            </p>
+
+            <p>
+              Experimental genome research and reproductive biology,
+              focusing on the molecular mechanisms of spermiogenesis
+              and male fertility using genetically modified mice.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="cv-entry">
+
+          <div class="cv-date">
+            RESEARCH
+          </div>
+
+          <div class="cv-marker"></div>
+
+          <div class="cv-entry-content">
+
+            <p class="cv-type">
+              EXPERIMENTAL GENOME RESEARCH
+            </p>
+
+            <h3>
+              Research Institute for Microbial Diseases
+            </h3>
+
+            <p class="cv-place">
+              The University of Osaka · Osaka, Japan
+            </p>
+
+            <p>
+              Functional genetic analysis of testis-enriched genes,
+              sperm morphogenesis, sperm motility, and male fertility.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="cv-entry cv-entry-research">
+
+          <div class="cv-date">
+            SELECTED
+          </div>
+
+          <div class="cv-marker embryo-marker"></div>
+
+          <div class="cv-entry-content">
+
+            <p class="cv-type">
+              RESEARCH MILESTONES
+            </p>
+
+            <div class="cv-milestones">
+
+              <div>
+                <span>2023</span>
+                <p>
+                  TSNAXIP1 / 1700010I14RIK
+                  <small>Sperm motility & male fertility</small>
+                </p>
+              </div>
+
+              <div>
+                <span>2024</span>
+                <p>
+                  FBXO24
+                  <small>Sperm flagellum & male fertility</small>
+                </p>
+              </div>
+
+              <div>
+                <span>2025</span>
+                <p>
+                  TEX38–ZDHHC19
+                  <small>Sperm head morphogenesis</small>
+                </p>
+              </div>
+
+              <div>
+                <span>2026</span>
+                <p>
+                  FBXO39
+                  <small>Spermiogenesis & male fertility</small>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="cv-entry cv-forward">
+
+          <div class="cv-date">
+            FORWARD
+          </div>
+
+          <div class="cv-marker embryo-marker"></div>
+
+          <div class="cv-entry-content">
+
+            <p class="cv-type">
+              RESEARCH DIRECTION
+            </p>
+
+            <h3>
+              Early development & epigenome engineering
+            </h3>
+
+            <p>
+              Extending causal perturbation from DNA sequence
+              to epigenetic state across fertilization and early
+              mammalian development.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
 
 
 <footer>
@@ -413,10 +896,13 @@
     <p>Reproductive & Developmental Biology</p>
   </div>
 
+
   <div class="footer-links">
     <a href="research.html">Research</a>
     <a href="works.html">Works</a>
+    <a href="#cv">CV</a>
   </div>
+
 
   <div class="footer-note">
     <span>Berlin, Germany</span>
@@ -427,19 +913,33 @@
 
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.12
-  });
+document.documentElement.classList.add("js");
 
-  document
-    .querySelectorAll(".research-stage, .trajectory-heading, .philosophy-grid")
-    .forEach((element) => observer.observe(element));
+const revealTargets = document.querySelectorAll(
+  ".research-stage, .cv-entry"
+);
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.08
+    }
+  );
+
+  revealTargets.forEach((element) => observer.observe(element));
+} else {
+  revealTargets.forEach((element) => {
+    element.classList.add("visible");
+  });
+}
 </script>
 
 </body>
